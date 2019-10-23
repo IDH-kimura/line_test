@@ -19,5 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['namespace' => 'Api'], function() {
     // Line‚©‚ç‚ÌWebhook‚ðŽóM
-    Route::post('/line/callback', 'LineController@callback')->name('line.callback');
+    Route::post('/line/webhook', 'LineController@webhook')->name('line.webhook');
 });
