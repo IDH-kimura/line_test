@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/callback', 'LineTestController@callback');
+Route::post('callback', 'LineTestController@callback');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
